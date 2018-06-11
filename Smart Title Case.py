@@ -27,5 +27,3 @@ class SmartTitleCaseCommand(sublime_plugin.TextCommand):
             s = self.view.substr(region)
             s = titlecase(s)
             self.view.replace(edit, region, s)
-
-            print("tex: ", s)
